@@ -36,7 +36,7 @@ Name: "{group}\LICENSE.txt"; Filename: "{app}\LICENSE.txt"
 Name: "{group}\Uninstall Unispim"; Filename: "{uninstallexe}"
 
 [Run]
-Filename: "{app}\ime_setup.exe"; Parameters: "/i unispim6.ime"
+Filename: "{app}\ime_install.exe"; Parameters: "/i unispim6.ime"
 
 [UninstallRun]
-Filename: "{app}\ime_setup.exe"; Parameters: "/u unispim6.ime"
+Filename: "{app}\ime_install.exe"; Parameters: "/u unispim6.ime"
