@@ -1,4 +1,4 @@
-// Microsoft Visual C++ generated resource script.
+ï»¿// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
@@ -7,13 +7,17 @@
 //
 // Generated from the TEXTINCLUDE 2 resource.
 //
-#include "afxres.h"
+//#include "afxres.h"
+#include <windows.h>
+#include <winresrc.h>
+#include <winres.h>
+
 
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// ÖÐÎÄ(ÖÐ»ªÈËÃñ¹²ºÍ¹ú) resources
+// ä¸­æ–‡(ä¸­åŽäººæ°‘å…±å’Œå›½) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 #ifdef _WIN32
@@ -60,77 +64,78 @@ IDI_UNISPIM             ICON                    "logo_ime.ico"
 //
 // Menu
 //
+/*
 
 IDR_IMEMENU MENU 
 BEGIN
     POPUP ""
     BEGIN
-        POPUP "¸ü»»Ö÷Ìâ"
+        POPUP "æ›´æ¢ä¸»é¢˜"
         BEGIN
-            MENUITEM "ÏÂÔØ¸ü¶àÖ÷Ìâ...",                   ID_SKIN_BROWSER
-            MENUITEM "Ö÷ÌâÖÆ×÷...",                     ID_THEME_MAKER
+            MENUITEM "ä¸‹è½½æ›´å¤šä¸»é¢˜...",                   ID_SKIN_BROWSER
+            MENUITEM "ä¸»é¢˜åˆ¶ä½œ...",                     ID_THEME_MAKER
             MENUITEM SEPARATOR
         END
-        POPUP "Èí¼üÅÌ"
+        POPUP "è½¯é”®ç›˜"
         BEGIN
-            MENUITEM "³£ÓÃ·ûºÅ       ¢Å¡ô¡ç ",             ID_SKB0
-            MENUITEM "±êµã·ûºÅ     ¡º£¿£¡¡¿",               ID_SKB1
-            MENUITEM "ÌØÊâ·ûºÅ      ¡ì¡ñ¡÷",               ID_SKB2
-            MENUITEM "±í¸ñÏß        ©³ ©Ó ©´",            ID_SKB3
+            MENUITEM "å¸¸ç”¨ç¬¦å·       â‘´â—†ï¼„ ",             ID_SKB0
+            MENUITEM "æ ‡ç‚¹ç¬¦å·     ã€Žï¼Ÿï¼ã€‘",               ID_SKB1
+            MENUITEM "ç‰¹æ®Šç¬¦å·      Â§â—â–³",               ID_SKB2
+            MENUITEM "è¡¨æ ¼çº¿        â” â”¯ â”",            ID_SKB3
             MENUITEM SEPARATOR
-            MENUITEM "Êý×ÖÐòºÅ     ¢ü¢²¢ç",                ID_SKB4
-            MENUITEM "ÊýÑ§·ûºÅ     ¡Ö¡Å¡Ï",                ID_SKB5
-            MENUITEM "µ¥Î»·ûºÅ     ÍòÈþ¡æ",                ID_SKB6
+            MENUITEM "æ•°å­—åºå·     â…«â’‰ãˆ¢",                ID_SKB4
+            MENUITEM "æ•°å­¦ç¬¦å·     â‰ˆâˆ¨âˆ ",                ID_SKB5
+            MENUITEM "å•ä½ç¬¦å·     ä¸‡åâ„ƒ",                ID_SKB6
             MENUITEM SEPARATOR
-            MENUITEM "Æ´Òô·ûºÅ     ¨¡ ¨¦ ¨©",              ID_SKB7
-            MENUITEM "×¢Òô·ûºÅ¡¡ ¨Ø¨è¨Ü",                   ID_SKB8
-            MENUITEM "ÈÕÎÄÆ½¼ÙÃû ¤µ¤·¤¹",                   ID_SKB9
-            MENUITEM "ÈÕÎÄÆ¬¼ÙÃû ¥µ¥·¥¹",                   ID_SKB10
-            MENUITEM "Ï£À°×ÖÄ¸     ¦Á ¦Â ¦Ã",              ID_SKB11
-            MENUITEM "¶íÎÄ×ÖÄ¸ ¡¡ §Þ §ß §á",                ID_SKB12
-            MENUITEM "Ó¢ÎÄ¼üÅÌ     a b c",              ID_SKB13
-            MENUITEM "PC¼üÅÌ       a b c",            ID_SKB14
+            MENUITEM "æ‹¼éŸ³ç¬¦å·     Ä Ã© Ä«",              ID_SKB7
+            MENUITEM "æ³¨éŸ³ç¬¦å·ã€€ ã„˜ã„¨ã„œ",                   ID_SKB8
+            MENUITEM "æ—¥æ–‡å¹³å‡å ã•ã—ã™",                   ID_SKB9
+            MENUITEM "æ—¥æ–‡ç‰‡å‡å ã‚µã‚·ã‚¹",                   ID_SKB10
+            MENUITEM "å¸Œè…Šå­—æ¯     Î± Î² Î³",              ID_SKB11
+            MENUITEM "ä¿„æ–‡å­—æ¯ ã€€ Ð¼ Ð½ Ð¿",                ID_SKB12
+            MENUITEM "è‹±æ–‡é”®ç›˜     a b c",              ID_SKB13
+            MENUITEM "PCé”®ç›˜       a b c",            ID_SKB14
         END
         MENUITEM SEPARATOR
-        MENUITEM "Ó¢ÎÄÊäÈë·¨",                       ID_ENGLISH_INPUT
-        MENUITEM "×´Ì¬´°¿Ú",                        ID_SHOWSTATUS
-        MENUITEM "¹â±ê¸úËæ",                        ID_GBGS
+        MENUITEM "è‹±æ–‡è¾“å…¥æ³•",                       ID_ENGLISH_INPUT
+        MENUITEM "çŠ¶æ€çª—å£",                        ID_SHOWSTATUS
+        MENUITEM "å…‰æ ‡è·Ÿéš",                        ID_GBGS
         MENUITEM SEPARATOR
-        MENUITEM "È«Æ´",                          ID_QUANPIN
-        MENUITEM "Ë«Æ´",                          ID_SHUANGPIN
+        MENUITEM "å…¨æ‹¼",                          ID_QUANPIN
+        MENUITEM "åŒæ‹¼",                          ID_SHUANGPIN
         MENUITEM SEPARATOR
-        MENUITEM "¼òÌå",                          ID_JIANTI
-        MENUITEM "·±Ìå",                          ID_FANTI
-        MENUITEM "È«¼¯",                          ID_HZ_ALL
+        MENUITEM "ç®€ä½“",                          ID_JIANTI
+        MENUITEM "ç¹ä½“",                          ID_FANTI
+        MENUITEM "å…¨é›†",                          ID_HZ_ALL
         MENUITEM SEPARATOR
-        MENUITEM "ÉèÖÃ...",                       ID_SETUP
-        POPUP "¸¨Öú¹¤¾ß"
+        MENUITEM "è®¾ç½®...",                       ID_SETUP
+        POPUP "è¾…åŠ©å·¥å…·"
         BEGIN
-            MENUITEM "ÉèÖÃÏòµ¼",                        ID_CFG_WIZARD
-            //MENUITEM "ÊäÈë·¨¹ÜÀíÆ÷",                      ID_IMEMANAGER
-            MENUITEM "Æ«ÅÔ²¿Ê×¼ì×Ö",                      ID_PIANPANGJIANZI
-            MENUITEM "²ð×ÖÊäÈë",                        ID_COMPOSE
-            MENUITEM "·ûºÅÊäÈë",                        ID_SPWPLUGIN
-            MENUITEM "Ö÷ÌâÖÆ×÷",                        ID_THEME_MAKER
-            MENUITEM "´Ê¿â¹ÜÀí",                        ID_ADDWORD
-            MENUITEM "ÅúÁ¿Ôì´Ê",                        ID_WORD_BATCH
-            MENUITEM "ºº×Ö¹ÜÀí",                        ID_ZI_MANAGE
+            MENUITEM "è®¾ç½®å‘å¯¼",                        ID_CFG_WIZARD
+            //MENUITEM "è¾“å…¥æ³•ç®¡ç†å™¨",                      ID_IMEMANAGER
+            MENUITEM "åæ—éƒ¨é¦–æ£€å­—",                      ID_PIANPANGJIANZI
+            MENUITEM "æ‹†å­—è¾“å…¥",                        ID_COMPOSE
+            MENUITEM "ç¬¦å·è¾“å…¥",                        ID_SPWPLUGIN
+            MENUITEM "ä¸»é¢˜åˆ¶ä½œ",                        ID_THEME_MAKER
+            MENUITEM "è¯åº“ç®¡ç†",                        ID_ADDWORD
+            MENUITEM "æ‰¹é‡é€ è¯",                        ID_WORD_BATCH
+            MENUITEM "æ±‰å­—ç®¡ç†",                        ID_ZI_MANAGE
         END
         MENUITEM SEPARATOR
-        POPUP "°ïÖú"
+        POPUP "å¸®åŠ©"
         BEGIN
-            MENUITEM "°ïÖú",                          ID_HELP_SF
-            MENUITEM "°æ±¾ÐÅÏ¢...",                     ID_VERSION
+            MENUITEM "å¸®åŠ©",                          ID_HELP_SF
+            MENUITEM "ç‰ˆæœ¬ä¿¡æ¯...",                     ID_VERSION
         END
     END
 END
-
+*/
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Version
 //
-
+/*
 VS_VERSION_INFO VERSIONINFO
  FILEVERSION 6,9,0,22
  PRODUCTVERSION 6,9,0,0
@@ -148,15 +153,15 @@ BEGIN
     BEGIN
         BLOCK "080403a8"
         BEGIN
-            VALUE "Comments", "»ªÓîÆ´ÒôÊäÈë·¨IMEÎÄ¼þ"
-            VALUE "CompanyName", "±±¾©»ªÓîÈí¼þ¹É·ÝÓÐÏÞ¹«Ë¾"
-            VALUE "FileDescription", "»ªÓîÆ´ÒôÊäÈë·¨V6.9"
+            VALUE "Comments", "åŽå®‡æ‹¼éŸ³è¾“å…¥æ³•IMEæ–‡ä»¶"
+            VALUE "CompanyName", "åŒ—äº¬åŽå®‡è½¯ä»¶è‚¡ä»½æœ‰é™å…¬å¸"
+            VALUE "FileDescription", "åŽå®‡æ‹¼éŸ³è¾“å…¥æ³•V6.9"
             VALUE "FileVersion", "6.9.0.22"
             VALUE "InternalName", "unispim v6"
             VALUE "LegalCopyright", "Copyright (C) Thunisoft 2011"
             VALUE "LegalTrademarks", "Thunisoft"
             VALUE "OriginalFilename", "unispim6.ime"
-            VALUE "ProductName", "»ªÓîÆ´ÒôÊäÈë·¨"
+            VALUE "ProductName", "åŽå®‡æ‹¼éŸ³è¾“å…¥æ³•"
             VALUE "ProductVersion", "6.9"
         END
     END
@@ -165,8 +170,8 @@ BEGIN
         VALUE "Translation", 0x804, 936
     END
 END
-
-#endif    // ÖÐÎÄ(ÖÐ»ªÈËÃñ¹²ºÍ¹ú) resources
+*/
+#endif    // ä¸­æ–‡(ä¸­åŽäººæ°‘å…±å’Œå›½) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -180,4 +185,3 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
-
