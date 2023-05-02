@@ -13,6 +13,19 @@
 - 安装 Visiual Studio 2010
 - 打开 .sln 文件
 
+
+Build Environment :
+
+ - Microsoft Visual Studio Community 2022 (64 ビット) Version 17.4.4
+ - Windows 10 SDK (10.0.22000.0)
+ - MSVC v143- VS 2022 C++ x64/x86
+
+
+Download The Visual Studio Community 2022:
+
+ - https://visualstudio.microsoft.com/ja/free-developer-offers/
+
+
 ## LICENSE
 Licensed under the LGPL, Version 3 (the "License");
 
