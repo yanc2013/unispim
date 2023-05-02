@@ -26,7 +26,7 @@ AlwaysRestart=yes
 Source: "README.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "build\Release\unispim6.ime"; DestDir: "{sys}"; Flags: ignoreversion
-Source: "build\Release\ime_setup.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "build\Release\ime_install.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
